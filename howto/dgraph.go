@@ -24,6 +24,17 @@ dgraph server --memory_mb 2048 --zero localhost:5080
 # Start web UI
 dgraph-ratel  -port 11111
 
+
+### backup command
+# `--export` option can specify where to back up. Not clear how to use --export
+# `--export` flag can be used to specify the export folder, by default export directory
+#  in created in CWD(current working directory) of dgraph process(from where it was started).
+# Following command generate two files *.schema.gz and *.rdf.gz
+
+curl localhost:8080/admin/export
+
+### import backup data
+dgraph bulk --schema_file --rdfs *.rdf or *.rdf.gz # --schema_file schema file.
 ## Schema
 #   There are two kinds of nodes in a graph, let’s call them nodes and values (or literals).
 #   In the example, nodes representing people have a name edge to a string value and an age edge to an int value.
