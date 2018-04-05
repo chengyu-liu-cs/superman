@@ -17,7 +17,7 @@ dgraph zero --port_offset -2000
 #
 #  IMPORTANT  TO  READ
 #     https://discuss.dgraph.io/t/what-is-zero-what-is-server/1966
-dgraph server --memory_mb 2048 --zero localhost:5080
+dgraph server --memory_mb 2048 --zero localhost:3080
 
 # Dgraph up and running.
 
