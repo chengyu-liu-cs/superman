@@ -577,6 +577,70 @@ var_name as some_block {  }
   }
 }
 
+{
+  q(func: eq(type, "user")){
+    name
+    uid
+    type
+    counter
+    visited{
+      uid
+      name
+      type
+      counter
+      price
+      size
+      zip{
+        uid
+        name
+        type
+        city{
+          uid
+          name
+          type
+        }
+      }
+      from{
+        uid
+        name
+        type
+        counter
+      }
+      industry{
+        name
+      }
+      region{
+        name
+      }
+    }
+    topics@facets(facetscounter, orderdesc: facetscounter) (first: 10) {
+      uid
+      name
+      type
+      counter
+      noise
+    }
+    os@facets(facetscounter){
+      uid
+      name
+      type
+      counter
+    }
+    device@facets(facetscounter){
+      uid
+      name
+      type
+      counter
+    }
+    industry@facets(facetscounter, orderdesc: facetscounter) (first: 10) {
+      name
+    }
+    region@facets(facetscounter, orderdesc: facetscounter) (first: 10) {
+      name
+    }
+  }
+}
+
 
 
 
