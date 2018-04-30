@@ -1,6 +1,14 @@
 ############ Alias
+# for mac
+alias ls='ls -FhG'
+alias ll='ls -aFhlG'
+alias search=grep
+alias ports='sudo lsof -iTCP -sTCP:LISTEN -P'
+
+# for linux
 alias ll="ls -la --color=auto"
 alias ls="ls --color=auto"
+
 alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
