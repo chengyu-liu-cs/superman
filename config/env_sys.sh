@@ -9,4 +9,9 @@ brew install python
 sudo easy_install pip
 # Install VirtualEnv
 sudo install virtualenv
+# Create a virtual environment
+VirtEnv=.virtenv
+virtualenv "$VirtEnv"
+source "$VirtEnv/bin/activate"
+pip --disable-pip-version-check install --upgrade --requirement conf/python-requirement.txt > pip-install.log
 
