@@ -8,7 +8,7 @@ brew install python
 # Install pip
 sudo easy_install pip
 # Install VirtualEnv
-sudo install virtualenv
+pip install virtualenv
 # Create a virtual environment
 VirtEnv=.virtenv
 virtualenv "$VirtEnv"
