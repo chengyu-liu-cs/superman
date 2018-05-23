@@ -17,3 +17,5 @@ pip --disable-pip-version-check install --upgrade --requirement python_requireme
 
 # Cut video from long video
 brew install ffmpeg 
+
+brew install opencv --python27 --ffmpeg
