@@ -1,3 +1,4 @@
+# Original post https://medium.com/radon-dev/als-implicit-collaborative-filtering-5ed653ba39fe
 import implicit # The Cython library
 import numpy as np
 import pandas as pd
